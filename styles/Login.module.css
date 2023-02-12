@@ -1,0 +1,165 @@
+.login_body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f4f6f6;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.login_body_left{
+    /* background-color: aqua; */
+    width: fit-content;
+    padding: 0rem 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
+.form{
+
+}
+.form_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.input_label{
+    font-size: 1.2rem;
+    font-weight:500;
+    margin: 0.5rem 0rem;
+}
+.input_input_body{
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 5px;
+    /* width: 100%; */
+    border: 2px solid black;
+    border-radius: 0px;
+}
+
+.input_input_body:focus{
+    outline: none;
+    border: 2px solid rgb(226, 8, 8);
+    border-radius: 0px;
+}
+
+.login_body_left_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0rem;
+}
+.login_body_left_footer_button{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.3rem 0.2rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(254, 199, 0, 1);
+}
+.login_body_left_footer_button:hover{
+    background-color: rgba(254, 199, 0, 0.5);
+}
+.login_body_left_footer_text{
+    color: blue;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.login_body_right{
+    /* background-color: greenyellow; */
+    /* width: 50%; */
+}
+
+
+@media screen and (max-width: 650px){
+    .login_body{
+        /* width: 100%; */
+        
+    }
+    .login_body_right{
+        width: 50%;
+        margin-right: 0px;
+    }
+    .login_body_left{
+        width: 50%;
+        margin-right: 0.5rem;
+    }
+    .login_body_image{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .input_input_body{
+        width: 100%;
+    }
+   /* .login_body_left{
+    background-image: url("/login-anime.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .login_body_right{
+    display: none;
+   }
+   .input_label{
+    color: rgb(255, 255, 255);
+    background-color: #241B1E;
+    width: fit-content;
+   }
+   .login_body_left_header{
+    color: beige;
+    background-color: #241B1E;
+    width: fit-content;
+   } */
+}
+@media screen and (max-width: 540px) {
+    .login_body{
+        width: auto;
+    }
+     .login_body_left{
+    background-image: url("/login-anime.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    width: 100%;
+    margin-right: 0px;
+    padding: 0px;
+   }
+   .login_body_right{
+    display: none;
+   }
+   .input_label{
+    color: rgb(255, 255, 255);
+    background-color: #241B1E;
+    width: fit-content;
+    margin-left: 0.5rem;
+   }
+   .login_body_left_header{
+    color: beige;
+    background-color: #241B1E;
+    margin-left: 0.5rem;
+    width: fit-content;
+   }
+
+   .input_input_body{
+         width: 90%;
+         /* margin-left: 0.5rem; */
+   }
+   
+   .login_body_left_footer_button{
+         width: 90%;
+         margin-left: -0.5rem;
+          align-self: flex-start; 
+          margin-left: 0.5rem;
+          margin-right: 1rem; 
+   }
+   .login_body_left_footer_text{
+    background-color: aliceblue;
+    width: fit-content;
+   }
+   
+}
+    
