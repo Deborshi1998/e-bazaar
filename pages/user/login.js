@@ -7,11 +7,10 @@ import {
 } from "firebase/auth";
 import { useRouter } from "next/router";
 import styles from "../../styles/Login.module.css";
-import app from "../../utils/firebaseSetup";
-import { login, selectUserToken } from "../../store/cart/userToken";
-import { useDispatch, useSelector } from "react-redux";
-import { db } from "../../utils/firebaseSetup";
-import { collection, setDoc, doc } from "firebase/firestore";
+import { login } from "../../store/cart/userToken";
+import { useDispatch } from "react-redux";
+import  {app, db} from "../../utils/firebaseSetup";
+import { setDoc, doc } from "firebase/firestore";
 import { fetchProducts } from "../../store/cart/userCart";
 function Login() {
   const auth = getAuth(app);
